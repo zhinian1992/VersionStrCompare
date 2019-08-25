@@ -20,7 +20,7 @@ Version::~Version()
 /// <param name=""></param>
 Version::Version(std::string str)
 {
-	Prase(str);
+	Parse(str);
 }
 
 /// <summary>
@@ -29,7 +29,7 @@ Version::Version(std::string str)
 /// <param name=""></param>
 Version & Version::operator=(std::string str)
 {
-	Prase(str);
+	Parse(str);
 
 	return *this;
 }
@@ -88,7 +88,7 @@ int Version::compare(Version & v)
 /// prase version string
 /// </summary>
 /// <param name=""></param>
-bool Version::Prase(std::string &str)
+bool Version::Parse(std::string &str)
 {
 	auto praseByChar = [](string data, string split,vector<string>& vec) {
 		if (data.length() == 0 || split.length() == 0) {

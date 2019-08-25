@@ -13,19 +13,19 @@ public:
 	Version& operator= (std::string str);
 
 	Version& operator= (Version &v);
-
+	
 	std::string to_string();
 
 	int compare(Version &v);
 
 private:
-	bool Prase(std::string &str);
+	bool Parse(std::string &str);
 
 private:
 	std::string str;
 	std::string split;
 	std::vector<std::string> ver;
 
-	FRIEND_TEST(VersionTest, HandlePrase);
+	FRIEND_TEST(VersionTest, HandleParse);
 };
 

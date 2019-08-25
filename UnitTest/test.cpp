@@ -5,10 +5,10 @@ TEST(VersionTest, HandlesToString) {
 	EXPECT_EQ(ver.to_string(),"1.1.1");
 }
 
-TEST(VersionTest, HandlePrase) {
+TEST(VersionTest, HandleParse) {
 	Version ver;
 	string str = "1.1.1";
-	EXPECT_EQ(true, ver.Prase(str));
+	EXPECT_EQ(true, ver.Parse(str));
 }
 
 TEST(VersionTest, compare) {
